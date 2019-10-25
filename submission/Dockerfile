@@ -36,8 +36,8 @@ RUN pip3 install matplotlib tqdm libtiff scipy Pillow scikit-image opencv-python
 
 # Grabbing weights for our models
 # UNCOMMENT THIS WHEN REPO/WEIGHTS ARE PUBLIC
-#RUN curl -L https://github.com/DIUx-xView/xView2/releases/download/v1.0/localization.h5 -o /code/xview-2/weights/localization.h5
-#RUN curl -L https://github.com/DIUx-xView/xView2/releases/download/v1.0/classification.hdf5 -o /code/xview-2/weights/classification.hdf5
+RUN curl -L https://github.com/DIUx-xView/xView2/releases/download/v1.0/localization.h5 -o /code/xview-2/weights/localization.h5
+RUN curl -L https://github.com/DIUx-xView/xView2/releases/download/v1.0/classification.hdf5 -o /code/xview-2/weights/classification.hdf5
 
 # Downloading ResNet and including it in the image
 RUN mkdir -p /root/.keras/models/ 
