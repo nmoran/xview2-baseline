@@ -22,7 +22,7 @@ RUN mkdir -p /code/xview-2/
 RUN mkdir -p /submission/ 
 RUN mkdir -p /output/ 
 
-ADD xview-2 /code/xview-2/
+ADD ../ /code/xview-2/
 
 # Updating the image 
 RUN apt update 
